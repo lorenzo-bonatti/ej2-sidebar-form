@@ -1,0 +1,13 @@
+# ASDF
+.asdf
+
+# IDE
+.idea
+.vscode
+
+# Build
+dist
+node_modules
+
+# Logs
+yarn-error.log
