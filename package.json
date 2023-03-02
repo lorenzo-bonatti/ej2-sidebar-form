@@ -11,6 +11,9 @@
     "README.md"
   ],
   "repository": "https://github.com/lorenzo-bonatti/ej2-sidebar-form.git",
+  "publishConfig": {
+    "@lorenzo-bonatti:registry": "https://npm.pkg.github.com"
+  },
   "author": "Lorenzo Bonatti <imlorenzobonatti@gmail.com>",
   "license": "MIT",
   "private": false,
