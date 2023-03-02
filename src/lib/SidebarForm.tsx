@@ -117,31 +117,33 @@ export default function SidebarForm(
             open={onOpen}
             close={onClose}
         >
-            {/* Title bar */}
-            <AppBarComponent isSticky colorMode={titleBarColorMode}>
-                {/* Title */}
-                <span>{title}</span>
-                <div className="e-appbar-spacer"/>
-                {
-                    // Close button
-                    closeIcon && <ButtonComponent
-                        iconCss={closeIcon}
-                        cssClass={titleBarColorMode === 'Primary' ? 'e-primary' : 'e-flat'}
-                        onClick={onClose}
-                    />
-                }
-            </AppBarComponent>
-            {/* Form content */}
-            <div className={styles.sidebarContent}>
-                <Form
-                    submitButton={submitButton}
-                    resetButton={resetButton}
-                    formWithSubmit={formWithSubmit}
-                    onSubmit={onSubmit}
-                    onReset={onReset}
-                >
-                    {children}
-                </Form>
+            <div className={styles.sidebarContainer}>
+                {/* Title bar */}
+                <AppBarComponent isSticky colorMode={titleBarColorMode}>
+                    {/* Title */}
+                    <span>{title}</span>
+                    <div className="e-appbar-spacer"/>
+                    {
+                        // Close button
+                        closeIcon && <ButtonComponent
+                            iconCss={closeIcon}
+                            cssClass={titleBarColorMode === 'Primary' ? 'e-primary' : 'e-flat'}
+                            onClick={onClose}
+                        />
+                    }
+                </AppBarComponent>
+                {/* Form content */}
+                <div className={styles.sidebarContent}>
+                    <Form
+                        submitButton={submitButton}
+                        resetButton={resetButton}
+                        formWithSubmit={formWithSubmit}
+                        onSubmit={onSubmit}
+                        onReset={onReset}
+                    >
+                        {children}
+                    </Form>
+                </div>
             </div>
         </SidebarComponent>
     )
