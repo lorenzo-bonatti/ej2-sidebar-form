@@ -14,18 +14,29 @@
   "author": "Lorenzo Bonatti <imlorenzobonatti@gmail.com>",
   "license": "MIT",
   "private": false,
+  "type": "module",
   "scripts": {
-    "build": "yarn build:esm && yarn build:cjs",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs"
+    "build:rollup": "rollup -c"
   },
   "peerDependencies": {
+    "@syncfusion/ej2-react-buttons": ">=20",
+    "@syncfusion/ej2-react-navigations": ">=20",
     "react": ">=16"
   },
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@syncfusion/ej2-react-buttons": "^20.4.50",
+    "@syncfusion/ej2-react-navigations": "^20.4.52",
     "@types/react": "^18.0.28",
+    "postcss": "^8.4.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "typescript": "^4.9.5"
+    "rollup": "^3.17.3",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "sass": "^1.58.3",
+    "typescript": "^4.9.5",
+    "typescript-plugin-css-modules": "^4.2.2"
   }
 }
