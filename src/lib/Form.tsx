@@ -90,7 +90,7 @@ export default function Form(
                     content={submitButton.content}
                     iconCss={submitButton.iconCss}
                     isPrimary={true}
-                    onClick={formWithSubmit ? onSubmit : undefined}
+                    onClick={!formWithSubmit ? onSubmit : undefined}
                 />
             </div>
         </form>
