@@ -70,11 +70,11 @@ export default function Form(
     }
 
     return (
-        <form onSubmit={submit} className={styles.formContainer}>
+        <form onSubmit={submit} className={styles.container}>
             {/* Content */}
             {children}
             {/* Action buttons */}
-            <div className={styles.formButtons}>
+            <div className={styles.buttons}>
                 {
                     // Reset
                     (resetButton && onReset) && <ButtonComponent
