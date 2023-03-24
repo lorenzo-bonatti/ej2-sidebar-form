@@ -68,7 +68,7 @@ export interface SidebarProps {
      * @default undefined
      */
     onClose?: () => void;
-    children: ReactElement;
+    children?: ReactElement;
 }
 
 export default function Sidebar(
